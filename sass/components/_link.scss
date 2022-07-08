@@ -1,0 +1,86 @@
+.link {
+  color: $color-neutral-vry-drk-des-blue;
+  text-decoration: none;
+
+  &--nav {
+    font-size: 2rem;
+    color: $color-neutral-drk-gry-blue;
+
+    transition: color 0.2s, opacity 0.2s;
+
+    &:hover {
+      color: $color-neutral-vry-drk-des-blue;
+    }
+
+    @media only screen and (min-width: $breakpoint-small) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      font-size: 1.8rem;
+      color: $color-primary-white;
+
+      &:hover {
+        opacity: 0.6;
+        color: $color-primary-white;
+      }
+    }
+  }
+
+  &--footer {
+    font-size: 1.8rem;
+    color: $color-primary-drk-mdr-cyan;
+
+    transition: all 0.15s;
+
+    &:hover {
+      color: $color-primary-white;
+    }
+  }
+
+  &--about {
+    position: relative;
+
+    font-family: $font-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    z-index: 20;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -2px;
+      left: -9px;
+      background-color: red;
+
+      height: 1rem;
+      width: 115%;
+
+      border-radius: 100vmax;
+
+      opacity: 0.25;
+      z-index: -1;
+
+      transition: opacity 0.15s;
+    }
+
+    &--yellow {
+      &::after {
+        background-color: $color-primary-yellow;
+      }
+    }
+
+    &--red {
+      &::after {
+        background-color: $color-primary-sft-red;
+      }
+    }
+
+    &:hover::after {
+      opacity: 0.75;
+    }
+  }
+}

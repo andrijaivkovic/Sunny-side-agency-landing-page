@@ -1,0 +1,35 @@
+.button {
+  padding: 2rem 3rem;
+  border-radius: 100vmax;
+
+  &--nav {
+    background-color: $color-primary-yellow;
+    font-size: 1.6rem;
+    font-family: $font-serif;
+    text-transform: uppercase;
+
+    transition: background-color 0.2s, color 0.2s;
+
+    color: $color-neutral-vry-drk-des-blue;
+
+    &:hover {
+      background-color: darken($color-primary-yellow, $amount: 5);
+    }
+
+    @media only screen and (min-width: $breakpoint-small) {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      font-size: 1.4rem;
+      padding: 1.75rem 2.5rem;
+
+      background-color: $color-primary-white;
+
+      &:hover {
+        color: $color-primary-white;
+        background-color: rgba($color-primary-white, 0.5);
+      }
+    }
+  }
+}

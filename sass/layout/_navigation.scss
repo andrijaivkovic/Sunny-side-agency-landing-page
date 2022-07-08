@@ -1,0 +1,89 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3rem 2rem;
+  width: 100%;
+
+  &__logo {
+    @media only screen and (min-width: $breakpoint-small) {
+      height: 3.5rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      height: 3.25rem;
+    }
+  }
+
+  &__menu-icon {
+    @media only screen and (min-width: $breakpoint-small) {
+      height: 3rem;
+    }
+  }
+
+  &__menu-icon-box {
+    position: relative;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+
+    cursor: pointer;
+  }
+
+  &__triangle {
+    position: absolute;
+    top: -3rem;
+    right: 0;
+
+    border-width: 2rem;
+    border-style: solid;
+
+    border-top-color: transparent;
+    border-left-color: transparent;
+
+    border-bottom-color: $color-primary-white;
+    border-right-color: $color-primary-white;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    right: 2rem;
+    top: 11rem;
+
+    @include flex-column;
+    @include flex-center;
+
+    gap: 3.5rem;
+
+    padding: 4rem 8rem;
+
+    list-style: none;
+
+    background-color: $color-primary-white;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      position: static;
+      background-color: transparent;
+      flex-direction: row;
+      padding: 0;
+
+      &.hidden {
+        display: flex !important;
+      }
+    }
+  }
+
+  &__list-item {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,80 @@
+.testimonials {
+  @include flex-column;
+  gap: 6rem;
+
+  align-items: center;
+
+  padding: 6rem 2rem;
+
+  background-color: $color-primary-white;
+
+  @media only screen and (min-width: $breakpoint-big) {
+    padding: 10rem 2rem;
+  }
+
+  &__content {
+    display: grid;
+    row-gap: 7rem;
+
+    @media only screen and (min-width: $breakpoint-small) {
+      grid-template-rows: repeat(2, max-content);
+      grid-template-columns: repeat(2, calc(50% - 3.5rem));
+
+      column-gap: 7rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      grid-template-rows: repeat(1, max-content);
+      grid-template-columns: repeat(3, calc(33% - 4.3rem));
+
+      column-gap: 7rem;
+
+      max-width: 80%;
+    }
+  }
+}
+
+.testimonial {
+  @include flex-column;
+  @include flex-center;
+
+  gap: 3rem;
+
+  &--1 {
+  }
+
+  &--2 {
+  }
+
+  &--3 {
+  }
+
+  &__image {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    font-family: $font-serif;
+    font-weight: 900;
+    color: $color-neutral-vry-drk-des-blue;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: $color-neutral-gry-blue;
+  }
+
+  &__body-text {
+    max-width: 40ch;
+  }
+
+  &__footer {
+    @include flex-column;
+    @include flex-center;
+    gap: 1.5rem;
+  }
+}

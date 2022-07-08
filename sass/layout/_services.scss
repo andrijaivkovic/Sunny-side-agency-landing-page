@@ -1,0 +1,45 @@
+.services {
+  display: grid;
+
+  grid-template-rows: repeat(2, 60rem);
+
+  align-content: end;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    grid-template-rows: 60rem;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  &__item {
+    @include flex-row;
+
+    justify-content: center;
+
+    padding: 6rem 1.5rem;
+
+    background-size: cover;
+    background-position: center;
+
+    &--gd {
+      background-image: url("../images/desktop/image-graphic-design.jpg");
+    }
+
+    &--photo {
+      background-image: url("../images/desktop/image-photography.jpg");
+    }
+  }
+
+  &__content {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+    align-self: end;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      max-width: 60ch;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.heading-1 {
+  font-family: $font-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: $color-primary-white;
+  letter-spacing: 8px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 3rem;
+  font-family: $font-serif;
+  font-weight: 900;
+  color: $color-neutral-vry-drk-des-blue;
+
+  text-align: center;
+
+  &--dark {
+    color: $color-neutral-vry-drk-des-blue;
+  }
+
+  &--green {
+    color: $color-primary-drk-des-cyan;
+  }
+
+  &--blue {
+    color: $color-primary-drk-blue;
+  }
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  font-family: $font-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $color-neutral-gry-blue;
+
+  text-align: center;
+
+  &--dark {
+    color: $color-neutral-gry-blue;
+  }
+}
+
+.body-text {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+  color: $color-neutral-drk-gry-blue;
+
+  &--large {
+    font-size: 1.8rem;
+  }
+
+  &--small {
+    font-size: 1.6rem;
+  }
+
+  &--dark {
+    color: $color-neutral-drk-gry-blue;
+  }
+
+  &--very-dark {
+    color: $color-neutral-vry-drk-gry-blue;
+  }
+
+  &--green {
+    color: $color-primary-drk-des-cyan;
+  }
+
+  &--blue {
+    color: $color-primary-drk-blue;
+  }
+}

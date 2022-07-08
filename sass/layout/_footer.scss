@@ -1,0 +1,56 @@
+.footer {
+  @include flex-column;
+  align-items: center;
+
+  gap: 10rem;
+
+  padding: 6rem 3rem;
+
+  background-color: #90d4c5;
+
+  @media only screen and (min-width: $breakpoint-big) {
+    padding: 8rem 3rem;
+  }
+
+  &__logo-links {
+    @include flex-column;
+    @include flex-center;
+
+    gap: 3rem;
+  }
+
+  &__links {
+    @include flex-row;
+    gap: 5rem;
+  }
+
+  &__logo {
+    width: 17rem;
+
+    filter: brightness(0) saturate(100%) invert(33%) sepia(96%) saturate(278%)
+      hue-rotate(116deg) brightness(92%) contrast(86%);
+  }
+
+  &__socials {
+    @include flex-row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__social-link {
+    filter: invert(37%) sepia(75%) saturate(301%) hue-rotate(118deg)
+      brightness(91%) contrast(95%);
+
+    outline-offset: 5px;
+
+    &:hover {
+      filter: brightness(0%) invert(100%);
+    }
+
+    & > img {
+      height: 2.5rem;
+    }
+  }
+}
+
+// #2C7566

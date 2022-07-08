@@ -1,0 +1,17 @@
+{
+  "name": "sunnyside-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for the fictional media company sunnyside, design provided on frontendmentor.io",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [],
+  "author": "Andrija Ivkovic",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}

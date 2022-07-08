@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+html {
+  font-family: $font-sans-serif;
+  font-size: 62.5%; // makes 1rem = 10px;
+
+  @media screen and (min-width: $breakpoint-small) {
+    font-size: 70%;
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 80%;
+  }
+}
+
+body {
+  @include flex-column;
+  min-height: 100vh;
+
+  background-color: #707070;
+}
+
+.hidden {
+  display: none !important;
+}
