@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/sunnyside-landing-page-built-using-sass-and-vanilla-javascript-N6Mv80KNI9](https://www.frontendmentor.io/solutions/sunnyside-landing-page-built-using-sass-and-vanilla-javascript-N6Mv80KNI9)
+- Live Site URL: [https://sunnyside-landing-page-ai.netlify.app/](https://sunnyside-landing-page-ai.netlify.app/)
 
 ## My process
 
